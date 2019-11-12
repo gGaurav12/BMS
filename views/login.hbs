@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<body>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container h-80">
+<div class="row align-items-center h-100">
+    <div class="col-3 mx-auto">
+        <div class="text-center">
+            <img id="profile-img" class="rounded-circle profile-img-card" src="https://i.imgur.com/6b6psnA.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form  class="form-signin" method="POST" action="/login">
+
+                <input type="text" name="username" class="form-control form-group" placeholder="Enter your username" required>
+                
+            
+                <input type="password" name="password" id="inputPassword" class="form-control form-group" placeholder="password" required autofocus>
+               <a href="/"> <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign In</button></a>
+
+                <font size="5.1" color="blue"> Dont have an account?</font>
+               <a href="/register"> <button type="button">Register</button></a>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<style>
+    body,html {
+    background-image: url('https://guardianlv.com/wp-content/uploads/2014/01/Money-in-the-Bank-No-Longer-Belongs-to-You-e1390674161914.jpg');
+    height: 100%;
+}
+
+#profile-img {
+    height:180px;
+}
+.h-80 {
+    height: 80% !important;
+}
+</style>
+</html>

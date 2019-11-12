@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Details</title>
+</head>
+<body>
+    <div class="Box">
+      {{#each el as |a|}}
+      <div id="a"> <b>Accounts Details</b></div>
+      
+      
+      <div id="b"  ><b>Card Holder:</b>{{a.Username}}</div>
+    <div id="c"><b>Card Number:</b>{{a.id}}</div>
+    <div id="d"><b>Email:</b>{{a.Email}}</div>
+    <div id="e"><b>Avaialbe Balanace:</b>{{a.Balance}}</div>
+    
+    {{/each}}
+    
+    </div>
+    <button id="b1" type="button"><a href= "/withdraw"> Withdraw </a></button>
+     <button id="b2" type="button"> <a href="/deposit"> Deposit </a></button>
+     <button id="b3" type="button"><a href="/logout">Logout</a></button>
+    
+
+</body>
+
+<style>
+   .Box{
+       height: 5cm;
+       width: 14cm;
+     background-color: white;
+     border: 2px solid grey ;
+     transform: translate(10cm,2cm);
+   }
+  #a{
+    height: 1cm;
+    width: 14cm;
+    background-color:aqua;
+    border:0px solid black;
+  }
+  #b{
+    height: 1cm;
+    width: 14cm;
+    background-color:;
+    border:0px solid aqua;
+  }
+  #c{
+    height: 1cm;
+    width: 14cm;
+    background-color:white;
+    border:0px solid aqua;
+  }
+  #d{
+    height: 1cm;
+    width: 14cm;
+    background-color:white;
+    border:0px solid aqua;
+  }
+  #e{
+    height: 1cm;
+    width: 14cm;
+    background-color:white;
+    border:0px solid aqua;
+  }
+  #b1{
+    font-size:21px;
+    transform: translate(14.3cm,3cm);
+  }
+  #b2{
+    font-size:21px;
+    transform: translate(8cm,3cm);
+  }
+  #b3{
+    font-size:21px;
+    transform: translate(13cm,3cm);
+  }
+</style>
+</html>
